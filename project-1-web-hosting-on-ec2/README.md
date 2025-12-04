@@ -68,13 +68,13 @@ project-1-web-hosting-on-ec2/
 
 ---
 
-## 📚 Hands-on Steps
+📚 Hands-on Steps
 Follow the detailed implementation steps here:  
 👉 [`steps.md`](./steps.md)
 
 ---
 
-## 👨‍💻 Author
+ 👨‍💻 Author
 **Vignesh Ganesan**  
 AWS Certified Cloud Practitioner — *Score: 1000/1000*
 ```
