@@ -36,11 +36,8 @@ See the dedicated file:
 | **Security Groups** | Controls inbound/outbound traffic |
 
 ---
-
 ## 📁 Project Folder Structure
 ```
-
-## 📁 Project Folder Structure
 project-1-web-hosting-on-ec2/
 │
 ├── README.md
@@ -50,7 +47,6 @@ project-1-web-hosting-on-ec2/
 │ ├── index.html
 │ └── userdata.sh
 └── notes.md
-
 ```
 
 ---
