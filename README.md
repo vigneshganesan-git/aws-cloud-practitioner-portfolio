@@ -1,5 +1,3 @@
----
-
 ````markdown
 # 🚀 AWS Cloud Practitioner Portfolio  
 ### **4 Real-World AWS Projects — EC2 • S3 • CloudFront • IAM • CloudWatch • Lambda • API Gateway • VPC**
