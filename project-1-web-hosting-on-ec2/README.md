@@ -39,15 +39,15 @@ See the dedicated file:
 
 ## 📁 Project Folder Structure
 ```
-
+## 📁 Project Folder Structure
 project-1-web-hosting-on-ec2/
 │
 ├── README.md
 ├── architecture-diagram.md
 ├── steps.md
 ├── src/
-│   ├── index.html
-│   └── userdata.sh
+│ ├── index.html
+│ └── userdata.sh
 └── notes.md
 
 ```
