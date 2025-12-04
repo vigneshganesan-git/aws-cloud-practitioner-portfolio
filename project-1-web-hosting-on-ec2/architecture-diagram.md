@@ -1,5 +1,5 @@
 
-````markdown
+```markdown
 # Architecture — Project 1: EC2 Web Hosting with S3, IAM Role & CloudWatch
 
 
