@@ -98,23 +98,6 @@ Detailed implementation guide is here:
 
 ---
 
-## 🖼️ **Screenshots**
-
-> Replace these with your real screenshots after testing.
-
-### **1️⃣ EC2 Webpage Running**
-
-![EC2 Webpage](https://via.placeholder.com/900x450?text=EC2+Web+Server+Screenshot)
-
-### **2️⃣ S3 Image Loaded on Webpage**
-
-![S3 Image](https://via.placeholder.com/900x450?text=S3+Image+Loading+Successfully)
-
-### **3️⃣ CloudWatch Alarm Triggered**
-
-![CloudWatch Alarm](https://via.placeholder.com/900x450?text=CloudWatch+Alarm+Screenshot)
-
----
 
 ## 📝 **Key Deliverables**
 
