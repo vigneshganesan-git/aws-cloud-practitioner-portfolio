@@ -1,25 +1,17 @@
-
 ---
 
-# 🚀 **AWS Cloud Practitioner Portfolio**
-
+````markdown
+# 🚀 AWS Cloud Practitioner Portfolio  
 ### **4 Real-World AWS Projects — EC2 • S3 • CloudFront • IAM • CloudWatch • Lambda • API Gateway • VPC**
 
-This repository showcases **hands-on Cloud Practitioner–level AWS projects** demonstrating real cloud skills across **Compute, Storage, Security, Networking, Monitoring, and Serverless**.
-Each project includes:
-
-* Clear purpose & scope
-* Architecture diagram
-* Step-by-step deployment
-* Best practices
-* Source files & notes
-
-This makes the portfolio ideal for **recruiters, interviewers, and students learning AWS fundamentals**.
+This portfolio demonstrates hands-on practical skills across the AWS Cloud Practitioner domains including Compute, Storage, Networking, Security, Serverless, and Monitoring.  
+All projects follow AWS best practices and include clear architecture diagrams and step-by-step implementation guides.
 
 ---
 
-# 🏗️ **Master Architecture — Combined View of All Projects**
+# 🏗️ Master Architecture — Combined View of All 4 Projects
 
+```mermaid
 flowchart TB
 
     %% MAIN TITLE
@@ -63,22 +55,22 @@ flowchart TB
         end
 
     end
-```
+````
 
 ---
 
-# 📦 **Portfolio Contents**
+# 📦 Portfolio Contents
 
-| Project       | Description                                                              | AWS Services Used                                       |
-| ------------- | ------------------------------------------------------------------------ | ------------------------------------------------------- |
-| **Project 1** | EC2-hosted webpage loading S3 assets with IAM role + CloudWatch alarms   | EC2, S3, IAM, CloudWatch, SNS                           |
-| **Project 2** | Secure static website distributed through CloudFront (private S3 origin) | S3, CloudFront, IAM, Route53 (optional)                 |
-| **Project 3** | EC2 monitoring with CloudWatch metrics, logs, and SNS notifications      | EC2, CloudWatch Logs, CloudWatch Metrics, SNS           |
-| **Project 4** | Serverless API using API Gateway + Lambda running inside a private VPC   | API Gateway, Lambda, VPC, IAM, CloudWatch, VPC Endpoint |
+| Project       | Description                                                                                      | AWS Services Used                                       |
+| ------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------- |
+| **Project 1** | EC2 web server hosting a webpage loading image assets from S3, with IAM role & CloudWatch alarms | EC2, S3, IAM, CloudWatch, SNS                           |
+| **Project 2** | Secure static website delivered using CloudFront with S3 origin (private bucket)                 | S3, CloudFront, IAM, Route53 (optional)                 |
+| **Project 3** | EC2 monitoring using CloudWatch metrics, logs, and SNS alerting                                  | EC2, CloudWatch Logs, CloudWatch Metrics, SNS           |
+| **Project 4** | Serverless REST API built using API Gateway + Lambda running inside a private VPC                | API Gateway, Lambda, VPC, IAM, CloudWatch, VPC Endpoint |
 
 ---
 
-# 📁 **Repository Structure**
+# 📁 Repository Structure
 
 ```
 aws-cloud-practitioner-portfolio/
@@ -119,46 +111,48 @@ aws-cloud-practitioner-portfolio/
 
 ---
 
-# 🧠 **Skills Demonstrated**
+# 🧠 Skills Demonstrated
 
 ### ✔ **Compute**
 
-* EC2 Linux instances
-* Apache hosting
-* Private-subnet Lambda functions
+* EC2 Linux hosting
+* Apache web server
+* Serverless Lambda functions
 
 ### ✔ **Storage**
 
-* Public & private S3 buckets
-* Static hosting
-* CloudFront origins
+* S3 buckets
+* Static file hosting
+* Secure private buckets
 
 ### ✔ **Networking**
 
 * CloudFront CDN
-* VPC subnets
-* API Gateway routing
+* Private VPC subnets
+* API Gateway HTTPS endpoints
 
 ### ✔ **Security**
 
-* IAM Roles & policies
-* S3 bucket security
+* IAM roles
+* S3 bucket policies
 * Execution roles
-* Least-privilege best practices
+* IAM least-privilege access control
 
 ### ✔ **Monitoring & Alerts**
 
-* CloudWatch metrics & logs
+* CloudWatch metrics
+* CloudWatch logs
 * EC2 CPU alarms
 * SNS email notifications
-* VPC endpoint logging
 
 ---
 
-# 👨‍💻 **Author**
+# 👨‍💻 Author
 
 **Vignesh Ganesan**
 AWS Certified Cloud Practitioner — *Score: 1000/1000*
-📧 Email: `vigneshganesan.pro@gmail.com`
+Email: `vigneshganesan.pro@gmail.com`
+
+```
 
 ---
