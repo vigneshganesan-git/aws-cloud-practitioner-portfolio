@@ -2,7 +2,7 @@
 ````markdown
 # Architecture — Project 1: EC2 Web Hosting with S3, IAM Role & CloudWatch
 
-```mermaid
+
 flowchart TB
     User((User))
     EC2[EC2 Instance<br/>Apache Web Server]
