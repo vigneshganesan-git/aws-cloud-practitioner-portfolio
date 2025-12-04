@@ -3,46 +3,75 @@
 
 # **Project 1 — EC2 Web Hosting with S3, IAM Role & CloudWatch Monitoring**
 
-## 📌 **Overview**
-
-This project showcases a complete, beginner-friendly yet industry-relevant AWS deployment.
-It demonstrates how to host a simple web application on **Amazon EC2**, load static assets from **Amazon S3**, enable secure access using **IAM Roles**, and implement monitoring with **CloudWatch** + **SNS Alerts**.
-
-This project reflects essential AWS Cloud Practitioner competencies:
-**Compute, Storage, IAM, Networking, Monitoring, and Security**.
+![AWS](https://img.shields.io/badge/AWS-Cloud%20Project-orange?logo=amazonaws)
+![Level](https://img.shields.io/badge/Level-Cloud%20Practitioner-blue)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
-## 🏗️ **Architecture Diagram**
+## 📑 **Table of Contents**
 
-Refer to the architecture flow here:
+* [Overview](#-overview)
+* [Architecture](#-architecture)
+* [What You Will Build](#-what-you-will-build)
+* [AWS Services Used](#-aws-services-used)
+* [Project Structure](#-project-structure)
+* [Deployment Steps](#-deployment-steps)
+* [Key Deliverables](#-key-deliverables)
+* [Security Best Practices](#-security-best-practices)
+* [Future Enhancements](#-future-enhancements)
+* [License](#-license)
+* [Author](#-author)
+
+---
+
+## 📌 **Overview**
+
+This project demonstrates how to host a simple web application on **Amazon EC2**, serve static assets from **Amazon S3**, securely authorize access via **IAM Roles**, and configure monitoring with **CloudWatch** and **SNS Alerts**.
+
+It reflects essential AWS Cloud Practitioner competencies:
+**Compute, Storage, IAM, Networking, Monitoring, Alerts, and Security**.
+
+---
+
+## 🏗️ **Architecture**
+
+Refer to the architecture file here:
 👉 [`architecture-diagram.md`](./architecture-diagram.md)
+
+**High-Level Flow:**
+
+1. User requests webpage → EC2 Apache server
+2. EC2 retrieves image from S3 using IAM Role
+3. CloudWatch monitors EC2 CPU
+4. SNS sends email alert if threshold is breached
 
 ---
 
 ## 🚀 **What You Will Build**
 
-By completing this project, you will deploy a fully functional AWS web hosting stack:
+You will deploy a fully functional AWS web hosting stack:
 
-* 🌐 **Amazon EC2** instance running Apache web server
-* 🗂️ **S3 Bucket** storing static website images
-* 🔐 **IAM Role** attached to EC2 to securely read S3 objects
-* 📊 **CloudWatch Alarm** tracking CPU utilization
-* 📩 **SNS Email Alerts** triggered by CloudWatch
-* 🖼️ A working webpage where EC2 loads an image from S3
+* 🌐 EC2 instance with **Apache web server**
+* 🗂️ S3 bucket storing static images
+* 🔐 IAM Role that lets EC2 read S3 objects (no access keys used)
+* 📊 CloudWatch CPU alarm
+* 📩 SNS email alert subscription
+* 🖥️ Live webpage loading an image from the S3 bucket
 
 ---
 
 ## 🔧 **AWS Services Used**
 
-| Service             | Purpose                                      |
-| ------------------- | -------------------------------------------- |
-| **EC2**             | Hosts the web server and website             |
-| **S3**              | Stores static assets such as images          |
-| **IAM Role**        | Grants EC2 secure S3 read access             |
-| **CloudWatch**      | Monitors EC2 performance and triggers alerts |
-| **SNS**             | Sends email notifications for alarms         |
-| **Security Groups** | Controls inbound/outbound traffic            |
+| Service             | Purpose                             |
+| ------------------- | ----------------------------------- |
+| **EC2**             | Runs web server (Apache)            |
+| **S3**              | Stores static website images/assets |
+| **IAM Role**        | Grants EC2 secure access to S3      |
+| **CloudWatch**      | Monitors EC2 CPU metrics            |
+| **SNS**             | Sends alert emails                  |
+| **Security Groups** | Firewall rules for EC2              |
 
 ---
 
@@ -62,31 +91,68 @@ project-1-web-hosting-on-ec2/
 
 ---
 
+## 📚 **Deployment Steps**
+
+Detailed implementation guide is here:
+👉 [`steps.md`](./steps.md)
+
+---
+
+## 🖼️ **Screenshots**
+
+> Replace these with your real screenshots after testing.
+
+### **1️⃣ EC2 Webpage Running**
+
+![EC2 Webpage](https://via.placeholder.com/900x450?text=EC2+Web+Server+Screenshot)
+
+### **2️⃣ S3 Image Loaded on Webpage**
+
+![S3 Image](https://via.placeholder.com/900x450?text=S3+Image+Loading+Successfully)
+
+### **3️⃣ CloudWatch Alarm Triggered**
+
+![CloudWatch Alarm](https://via.placeholder.com/900x450?text=CloudWatch+Alarm+Screenshot)
+
+---
+
 ## 📝 **Key Deliverables**
 
-* EC2 instance with Apache installed using **user data script**
-* Public S3 bucket hosting static assets
-* IAM Role with correct permissions attached to EC2
-* CloudWatch CPU alarm linked to SNS notifications
-* Successful webpage tested in browser (add your screenshot here)
-* Clean, documented folder structure suitable for GitHub portfolio
+* EC2 instance with Apache installed using User-Data
+* S3 bucket configured for static asset hosting
+* IAM Role with least-privilege S3 access
+* CloudWatch alarm + SNS notifications
+* Fully functional browser-accessible webpage
+* Professional GitHub documentation (this README)
 
 ---
 
 ## 🔒 **Security Best Practices**
 
-* No access keys stored on EC2
-* EC2 uses **IAM Role with least privilege**
-* S3 bucket access scoped minimally
-* Security group restricted to necessary ports only
-* Monitoring and alerting enabled for proactive visibility
+* No hard-coded access keys
+* IAM Role attached directly to EC2
+* S3 bucket policy: **least privilege**
+* Only required ports opened in Security Group
+* Monitoring + alerting enabled for visibility
 
 ---
 
-## 📚 **Hands-On Deployment Steps**
+## 🔮 **Future Enhancements**
 
-Follow the complete step-by-step implementation guide:
-👉 [`steps.md`](./steps.md)
+Planned improvements for next versions:
+
+* Add **CloudFront CDN** for faster global delivery
+* Add a **Load Balancer + Auto Scaling** (still optional at CP level)
+* Add a **CI/CD pipeline** for automated deployment
+* Add **HTTPS using ACM + ALB**
+* Add **Terraform/IaC version** (for DevOps path)
+
+---
+
+## 📄 **License**
+
+This project is licensed under the **MIT License**.
+You are free to use this project for learning and portfolio purposes.
 
 ---
 
@@ -94,5 +160,7 @@ Follow the complete step-by-step implementation guide:
 
 **Vignesh Ganesan**
 AWS Certified Cloud Practitioner — *Score: 1000/1000*
+Cloud & DevOps Enthusiast
 
 ---
+
