@@ -1,5 +1,4 @@
 
----
 
 # 🚀 **AWS Cloud Practitioner Portfolio**
 
@@ -160,6 +159,3 @@ AWS Certified Cloud Practitioner — *Perfect Score (1000/1000)*
 ---
 
 
-
-
-Just tell me **“Make Project 2 README professional.”**
