@@ -75,7 +75,7 @@ Follow the detailed implementation steps here:
 ---
 
  👨‍💻 Author
-**Vignesh Ganesan**  
+Vignesh Ganesan 
 AWS Certified Cloud Practitioner — *Score: 1000/1000*
 ```
 
