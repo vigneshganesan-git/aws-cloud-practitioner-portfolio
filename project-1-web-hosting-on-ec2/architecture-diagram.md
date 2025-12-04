@@ -3,7 +3,7 @@
 # Architecture — Project 1: EC2 Web Hosting with S3, IAM Role & CloudWatch
 
 
-flowchart TB
+
     User((User))
     EC2[EC2 Instance<br/>Apache Web Server]
     S3[(S3 Bucket<br/>Private Image Assets)]
