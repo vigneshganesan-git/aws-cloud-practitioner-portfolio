@@ -143,7 +143,7 @@ You are free to use this project for learning and portfolio purposes.
 
 **Vignesh Ganesan**
 AWS Certified Cloud Practitioner — *Score: 1000/1000*
-Cloud & DevOps Enthusiast
+
 
 ---
 
