@@ -20,7 +20,6 @@ This makes the portfolio ideal for **recruiters, interviewers, and students lear
 
 # 🏗️ **Master Architecture — Combined View of All Projects**
 
-```mermaid
 flowchart TB
 
     %% MAIN TITLE
