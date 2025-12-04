@@ -39,6 +39,7 @@ See the dedicated file:
 
 ## 📁 Project Folder Structure
 ```
+
 ## 📁 Project Folder Structure
 project-1-web-hosting-on-ec2/
 │
