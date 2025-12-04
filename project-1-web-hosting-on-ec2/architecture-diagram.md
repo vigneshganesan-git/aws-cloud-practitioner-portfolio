@@ -1,6 +1,6 @@
 
-
- Architecture — Project 1: EC2 Web Hosting with S3, IAM Role & CloudWatch
+````markdown
+# Architecture — Project 1: EC2 Web Hosting with S3, IAM Role & CloudWatch
 
 
 flowchart TB
@@ -65,7 +65,4 @@ flowchart TB
 3. EC2 sends CPU metrics to CloudWatch
 4. CloudWatch alarm triggers SNS alert email
 5. IAM Role ensures EC2 accesses S3 **without access keys**
-
----
-
 
