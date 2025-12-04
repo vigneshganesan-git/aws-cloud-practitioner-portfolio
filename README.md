@@ -17,8 +17,11 @@ This entire portfolio reflects practical understanding of **Compute, Storage, Ne
 
 ---
 Master Architecture — Combined View of All Projects
+flowchart TB
 
-AWS Cloud Practitioner Portfolio — 4 Project Architecture Overview
+    subgraph MASTER["AWS Cloud Practitioner Portfolio — 4 Project Architecture Overview"]
+    direction TB
+
         %% PROJECT 1
         subgraph P1["Project 1: EC2 Web Hosting (EC2 + S3 + IAM + CloudWatch)"]
         User1((User)) --> EC2[EC2 Web Server (Apache)]
@@ -52,6 +55,7 @@ AWS Cloud Practitioner Portfolio — 4 Project Architecture Overview
         end
 
     end
+
 ```
 
 ---
