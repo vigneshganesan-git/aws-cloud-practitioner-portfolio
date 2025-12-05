@@ -9,8 +9,6 @@ Users access the website through CloudFront only, ensuring the S3 bucket remains
 
 ## 🏗️ High-Level Architecture (Mermaid Diagram)
 
-```mermaid
-flowchart TB
 
     User((User))
     CF[CloudFront CDN]
@@ -61,6 +59,6 @@ This architecture provides **secure, fast, and scalable** static website hosting
 
 ```
 
----
+
 
 
