@@ -50,8 +50,6 @@ Maps a custom domain name (e.g., `www.example.com`) to the CloudFront distributi
 
 This architecture provides **secure, fast, and scalable** static website hosting using AWS best practices.
 
-```
-
 
 
 
