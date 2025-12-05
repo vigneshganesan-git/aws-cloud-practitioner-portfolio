@@ -12,7 +12,6 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
-
 ## 📑 **Table of Contents**
 
 * [Overview](#overview)
@@ -26,7 +25,6 @@
 * [Future Enhancements](#future-enhancements)
 * [License](#license)
 * [Author](#author)
-
 ---
 
 ## 📌 **Overview**
