@@ -8,7 +8,7 @@
 
 ![AWS](https://img.shields.io/badge/AWS-Cloud%20Project-orange?logo=amazonaws)
 ![Level](https://img.shields.io/badge/Level-Cloud%20Practitioner-blue)
-![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
