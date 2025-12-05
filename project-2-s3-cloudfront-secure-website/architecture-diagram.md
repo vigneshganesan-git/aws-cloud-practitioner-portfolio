@@ -1,14 +1,9 @@
+Project 2 — Architecture Diagram
 
-````markdown
-# Project 2 — Architecture Diagram
+This architecture illustrates how a secure static website is delivered using a private S3 bucket and Amazon CloudFront with Origin Access Control (OAC). Users access the website only through CloudFront, ensuring the S3 bucket remains private and protected.
 
-This architecture illustrates how a secure static website is delivered using a **private S3 bucket** and **Amazon CloudFront** with **Origin Access Control (OAC)**.  
-Users access the website through CloudFront only, ensuring the S3 bucket remains private and protected.
-
----
-
-## 🏗️ High-Level Architecture (Mermaid Diagram)
-
+High-Level Architecture (Mermaid Diagram)
+flowchart TB
 
     User((User))
     CF[CloudFront CDN]
@@ -19,9 +14,7 @@ Users access the website through CloudFront only, ensuring the S3 bucket remains
     User -->|HTTPS Request| CF
     CF -->|Secure Access via OAC| S3
     DNS --> CF
-````
 
----
 
 ## 📌 Components
 
