@@ -1,140 +1,137 @@
 
-```markdown
-# 🚀 **Project 3 — EC2 Monitoring & Alerts (CloudWatch + SNS)**
 
-![AWS](https://img.shields.io/badge/AWS-CloudWatch-yellow?logo=amazonaws)
-![Level](https://img.shields.io/badge/Level-Cloud%20Practitioner-blue)
-![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
-![License](https://img.shields.io/badge/License-MIT-green)
+# Project 3 — EC2 Monitoring & Alerts (CloudWatch + SNS)
+
+AWS CloudWatch • Monitoring • Alerts • SNS Notifications • EC2 Metrics
+Level: Cloud Practitioner • Status: In Progress • License: MIT
 
 ---
 
-## 📑 **Table of Contents**
+## Table of Contents
 
-* [Overview](#overview)
-* [Architecture](#architecture)
-* [What You Will Build](#what-you-will-build)
-* [AWS Services Used](#aws-services-used)
-* [Project Structure](#project-structure)
-* [Deployment Steps](#deployment-steps)
-* [Key Deliverables](#key-deliverables)
-* [Security Best Practices](#security-best-practices)
-* [Future Enhancements](#future-enhancements)
-* [License](#license)
-* [Author](#author)
-
----
-
-## 📌 **Overview**
-
-This project demonstrates how to monitor an **EC2 instance** using **Amazon CloudWatch Metrics**, **CloudWatch Logs**, and **SNS Email Alerts**.
-
-You will configure alarms, receive real-time notifications, and set up basic monitoring that reflects essential AWS Cloud Practitioner-level operational skills.
-
-This project focuses on AWS domains:
-
-**Monitoring, Logging, Alerts, Compute, IAM, and Operations.**
+* Overview
+* Architecture
+* What You Will Build
+* AWS Services Used
+* Project Structure
+* Deployment Steps
+* Key Deliverables
+* Security Best Practices
+* Future Enhancements
+* License
+* Author
 
 ---
 
-## 🏗️ **Architecture**
+## Overview
 
-Refer to the architecture file here:  
-👉 [`architecture-diagram.md`](./architecture-diagram.md)
+This project demonstrates how to monitor an EC2 instance using CloudWatch Metrics, CloudWatch Logs, and SNS email alerts.
+You will configure metric alarms, real-time notifications, and optional system log collection.
 
-### High-Level Flow
-
-1. EC2 generates metrics and logs  
-2. CloudWatch collects CPU and system metrics  
-3. Alarm evaluates thresholds (e.g., CPU > 70%)  
-4. SNS sends an email alert when the alarm triggers  
+This project reflects AWS Cloud Practitioner competencies across: Monitoring, Logging, Alerts, Compute, IAM, and Operations.
 
 ---
 
-## 🚀 **What You Will Build**
+## Architecture
 
-You will deploy a complete EC2 monitoring workflow:
+Refer to the architecture file here: architecture-diagram.md
 
-- EC2 instance with monitoring enabled  
-- CloudWatch Metrics (CPU, Network, Status Checks)  
-- CloudWatch Alarm with a threshold  
-- SNS Topic + Email subscription  
-- Optional: CloudWatch Logs for deeper analysis  
+High-Level Flow:
 
----
+1. EC2 generates metrics and logs
+2. CloudWatch collects CPU and system-level data
+3. CloudWatch Alarm evaluates thresholds
+4. SNS sends email notifications when the alarm triggers
 
-## 🔧 **AWS Services Used**
+Mermaid Diagram:
 
-| Service               | Purpose                                        |
-|-----------------------|------------------------------------------------|
-| **EC2**               | Compute instance to monitor                    |
-| **CloudWatch Metrics**| Collects CPU, network, and status metrics      |
-| **CloudWatch Logs**   | Stores system logs (optional)                  |
-| **CloudWatch Alarm**  | Triggers notifications when threshold is met   |
-| **SNS**               | Sends email notifications                      |
-| **IAM**               | Permissions for EC2 and CloudWatch agent       |
+```mermaid
+flowchart TB
 
----
-
-## 📁 **Project Structure**
-
+    EC2[EC2 Instance] --> Metrics[CloudWatch Metrics]
+    EC2 --> Logs[CloudWatch Logs]
+    Metrics --> Alarm[CloudWatch Alarm]
+    Alarm --> SNS[SNS Email Notification]
 ```
 
+---
+
+## What You Will Build
+
+* EC2 instance with monitoring enabled
+* CloudWatch Metrics (CPU usage, network, status checks)
+* CloudWatch Alarm with threshold configuration
+* SNS Topic and email subscription
+* Optional: CloudWatch Logs for deeper observability
+
+---
+
+## AWS Services Used
+
+EC2 – Instance to monitor
+CloudWatch Metrics – Collects performance data
+CloudWatch Logs – Optional log storage
+CloudWatch Alarms – Threshold-based alerting
+SNS – Email-based notifications
+IAM – Permissions for EC2 monitoring and CloudWatch agent
+
+---
+
+## Project Structure
+
 project-3-cloudwatch-monitoring-alerts/
-│
 ├── README.md
 ├── architecture-diagram.md
 ├── steps.md
 └── notes.md
 
-```
+---
+
+## Deployment Steps
+
+The full step-by-step guide is available in steps.md.
 
 ---
 
-## 📚 **Deployment Steps**
+## Key Deliverables
 
-Detailed step-by-step guide is documented here:  
-👉 [`steps.md`](./steps.md)
-
----
-
-## 📝 **Key Deliverables**
-
-- CloudWatch metrics enabled for EC2  
-- CPU-based alarm configured  
-- SNS email notification working  
-- Optional CloudWatch Logs integration  
-- Clean and professional documentation for portfolio  
+* Monitoring-enabled EC2 instance
+* CloudWatch alarm triggering based on CPU threshold
+* SNS email notification workflow
+* Optional CloudWatch logs
+* Fully documented GitHub project
 
 ---
 
-## 🔒 **Security Best Practices**
+## Security Best Practices
 
-- Use IAM role for EC2 (no access keys)  
-- SNS email subscription must be confirmed  
-- EC2 security group should allow only necessary ports  
-- IAM policies follow least-privilege principles  
-
----
-
-## 🔮 **Future Enhancements**
-
-- Add CloudWatch Dashboard  
-- Add Disk, Memory, and Network alarms  
-- Integrate EventBridge for automated recovery actions  
-- Enable CloudWatch Logs Agent for deeper insights  
-- Add Auto Scaling triggered by CloudWatch alarms  
+* Use IAM roles for EC2 instead of access keys
+* Confirm SNS subscription before use
+* Restrict EC2 inbound rules
+* Apply least-privilege IAM policies
 
 ---
 
-## 📄 **License**
+## Future Enhancements
 
-This project is licensed under the **MIT License**.
+* Add CloudWatch Dashboards
+* Add multi-metric alarms (memory, disk, network)
+* Use EventBridge for automated recovery
+* Enable CloudWatch Agent for detailed monitoring
+* Create Auto Scaling policies based on CloudWatch alarms
 
 ---
 
-## 👨‍💻 **Author**
+## License
 
-**Vignesh Ganesan**  
-AWS Certified Cloud Practitioner — *Score: 1000/1000*
-```
+This project is licensed under the MIT License.
+
+---
+
+## Author
+
+Vignesh Ganesan
+AWS Certified Cloud Practitioner — Score: 1000/1000
+
+---
+
