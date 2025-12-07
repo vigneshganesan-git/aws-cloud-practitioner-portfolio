@@ -1,4 +1,5 @@
 
+
 ---
 
 # Project 4 — Serverless API (API Gateway + Lambda in Private VPC)
@@ -145,3 +146,7 @@ This project is licensed under the MIT License.
 Vignesh Ganesan
 AWS Certified Cloud Practitioner — Score: 1000/1000
 
+---
+
+
+👉 **Next: architecture-diagram.md**
