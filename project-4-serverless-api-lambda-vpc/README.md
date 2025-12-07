@@ -1,7 +1,4 @@
 
-
----
-
 # Project 4 — Serverless API (API Gateway + Lambda in Private VPC)
 
 A real-world serverless REST API built using AWS Lambda (in a private subnet) and exposed through Amazon API Gateway.
@@ -53,8 +50,9 @@ High-Level Flow:
 4. Lambda logs messages to CloudWatch Logs through a VPC Endpoint
 5. IAM role controls Lambda permissions
 
+Mermaid Diagram:
 
-
+```mermaid
 flowchart TB
 
     User((User)) --> APIGW[API Gateway]
@@ -145,7 +143,3 @@ This project is licensed under the MIT License.
 Vignesh Ganesan
 AWS Certified Cloud Practitioner — Score: 1000/1000
 
----
-
-
-👉 **Next: architecture-diagram.md**
