@@ -53,13 +53,13 @@ High-Level Flow:
 Mermaid Diagram:
 
 
-```
+
 flowchart TB
     User((User)) --> APIGW[API Gateway]
     APIGW --> Lambda[Lambda Function (Private Subnet)]
     Lambda --> VPCE[VPC Endpoint (CloudWatch Logs)]
     Lambda --> IAM[(IAM Execution Role)]
-```
+
 
 ---
 
