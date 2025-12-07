@@ -1,10 +1,11 @@
 
-# Project 4 — Serverless API (API Gateway + Lambda in Private VPC)
 
-A real-world serverless REST API built using AWS Lambda (in a private subnet) and exposed through Amazon API Gateway.
-Lambda writes logs to CloudWatch using a VPC Endpoint, ensuring no public internet access.
+---
 
-This project covers AWS Cloud Practitioner concepts around Serverless, Networking, VPC Endpoints, Security, IAM Roles, and Monitoring.
+# Project 4 — Serverless API (API Gateway + Lambda + Private VPC)
+
+This project demonstrates how to build a secure serverless REST API using API Gateway and AWS Lambda running inside a private VPC subnet.
+The Lambda function has **no internet access**, and logs are sent to CloudWatch through a **VPC Endpoint**, ensuring a secure, fully private architecture.
 
 ---
 
@@ -26,62 +27,63 @@ This project covers AWS Cloud Practitioner concepts around Serverless, Networkin
 
 ## Overview
 
-This project demonstrates how to build a secure serverless API using API Gateway and Lambda.
-The Lambda function runs inside a private VPC subnet with **no internet access**, and communicates with CloudWatch Logs through a **VPC Endpoint**.
+This project shows how API Gateway invokes a Lambda function that runs **inside a private subnet**.
+Since the Lambda cannot access the internet, a **VPC Endpoint** is used to allow Lambda to send logs to CloudWatch privately.
 
-You will learn:
+This project strengthens Cloud Practitioner-level skills in:
 
-* How API Gateway triggers Lambda
-* How Lambda works inside a private VPC
-* How CloudWatch logging works using VPC endpoints
-* How IAM roles secure the entire workflow
+* Serverless
+* VPC networking
+* IAM roles
+* CloudWatch logging
+* API Gateway configuration
 
 ---
 
 ## Architecture
 
-Refer to the architecture file here: architecture-diagram.md
+Refer to: architecture-diagram.md
 
 High-Level Flow:
 
-1. User sends an HTTPS request to API Gateway
-2. API Gateway invokes Lambda function
-3. Lambda runs inside a private subnet
-4. Lambda logs messages to CloudWatch Logs through a VPC Endpoint
-5. IAM role controls Lambda permissions
+1. A user sends an HTTPS request to API Gateway
+2. API Gateway invokes the Lambda function
+3. Lambda runs inside a private subnet in the VPC
+4. Lambda sends logs to CloudWatch through a VPC Endpoint
+5. IAM Role controls Lambda’s permissions
 
 Mermaid Diagram:
 
-
-
+```mermaid
 flowchart TB
+
     User((User)) --> APIGW[API Gateway]
     APIGW --> Lambda[Lambda Function (Private Subnet)]
     Lambda --> VPCE[VPC Endpoint (CloudWatch Logs)]
     Lambda --> IAM[(IAM Execution Role)]
-
+```
 
 ---
 
 ## What You Will Build
 
-* Public API endpoint using API Gateway
-* Lambda function running in a private subnet
-* VPC with private and public subnets
-* CloudWatch logging via VPC Endpoint
+* A public HTTPS API exposed by API Gateway
+* A Lambda function running in a private subnet
+* A VPC with subnets and routing
+* A VPC Endpoint for CloudWatch Logs
 * IAM Execution Role for Lambda
-* A working GET endpoint returning a JSON response
+* A working GET endpoint returning a simple JSON response
 
 ---
 
 ## AWS Services Used
 
-API Gateway — Exposes the REST API
-Lambda — Executes backend logic
-VPC — Provides private subnet for Lambda
-VPC Endpoint — Enables CloudWatch Logs access privately
+API Gateway — Provides the public HTTPS API
+Lambda — Runs application logic
+VPC — Hosts Lambda in a private subnet
+VPC Endpoint — Allows secure access to CloudWatch Logs
 CloudWatch Logs — Stores Lambda logs
-IAM — Defines Lambda execution permissions
+IAM — Provides least-privilege permissions
 
 ---
 
@@ -99,36 +101,37 @@ project-4-serverless-api-lambda-vpc/
 
 ## Deployment Steps
 
-Full step-by-step guide is available here: steps.md
+All setup instructions are available here: steps.md
 
 ---
 
 ## Key Deliverables
 
-* Secure REST API with HTTPS
-* Lambda inside private subnet (no internet)
-* CloudWatch logs available through VPC Endpoint
-* Correct IAM role for Lambda
-* Fully working API endpoint
+* A functioning REST API
+* Lambda running securely in a private subnet
+* VPC Endpoint enabling CloudWatch logs
+* Logs visible in CloudWatch
+* Proper IAM roles attached to Lambda
+* Fully documented project
 
 ---
 
 ## Security Best Practices
 
-* Lambda placed in **private subnet**
-* No public internet access
-* VPC Endpoint for CloudWatch Logs
-* IAM role using least privilege
+* Lambda stays **inside a private subnet**
+* No NAT Gateway or internet access needed
+* VPC Endpoint ensures private communication with CloudWatch
+* IAM role uses least-privilege policies
 * API Gateway uses HTTPS by default
 
 ---
 
 ## Future Enhancements
 
-* Add POST, PUT, DELETE methods
+* Add more API routes (POST, PUT, DELETE)
 * Add DynamoDB integration
-* Add API Keys or Cognito authentication
-* Add Terraform/CloudFormation version
+* Add API authentication (API Keys / Cognito)
+* Build Terraform or CloudFormation automation
 
 ---
 
@@ -143,3 +146,4 @@ This project is licensed under the MIT License.
 Vignesh Ganesan
 AWS Certified Cloud Practitioner — Score: 1000/1000
 
+---
