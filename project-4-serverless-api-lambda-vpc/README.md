@@ -50,7 +50,7 @@ High-Level Flow:
 4. Lambda logs messages to CloudWatch Logs through a VPC Endpoint
 5. IAM role controls Lambda permissions
 
-Mermaid Diagram:
+
 
 ```mermaid
 flowchart TB
