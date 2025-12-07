@@ -1,7 +1,3 @@
-
-`project-4-serverless-api-lambda-vpc/lambda/lambda_function.py`
-
-```python
 import json
 import logging
 
@@ -44,8 +40,3 @@ def lambda_handler(event, context):
         },
         "body": json.dumps(response_body)
     }
-```
-
----
-
-
